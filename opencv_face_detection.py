@@ -35,7 +35,7 @@ def draw_facebox(image, result_list):
     ## display the image with rectangles
     cv2.imshow("Faces detected!", image)
     cv2.waitKey()
-    cv2.imwrite("image_with_bbox.jpg", image) ## saving the original image for future reference
+    cv2.imwrite("image_with_bbox.jpg", image) ## saving the image with Bboxes for future reference
 
 
 
