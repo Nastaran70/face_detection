@@ -1,4 +1,4 @@
-# face_detection
+Face Detection Using OpenCV
 
 This is a simple code for face detection using the OpenCV DNN Face Detector. I have used cv2.dnn.readNetFromTensorflow .
 The file opencv_face_detection.py will prompt the user to give the path to an image for detecting faces.
