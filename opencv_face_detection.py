@@ -38,13 +38,14 @@ def draw_facebox(image, result_list):
 
 
 
-
+## loading opencv face detector model:
 modelFile = "./Models/opencv_face_detector_uint8.pb"
 configFile = "./Models/opencv_face_detector.pbtxt"
 net = cv2.dnn.readNetFromTensorflow(modelFile, configFile)
+
 img_path = input("Please enter the location of the image file: ")    ## prompt the user to input the file path
-image = cv2.imread(img_path)   # load the image
-cv2.imshow("Original Image", image)  # show the original image
+image = cv2.imread(img_path)   ## read the image
+cv2.imshow("Original Image", image)  ## show the original image
 cv2.waitKey()
-results = detect_faces(image, net)  # detect faces
-draw_facebox(image, results)  # draw and show image with faceboxes 
+results = detect_faces(image, net)  ## detect faces
+draw_facebox(image, results)  ## draw and show image with faceboxes 
