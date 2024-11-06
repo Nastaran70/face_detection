@@ -42,7 +42,7 @@ modelFile = "./Models/opencv_face_detector_uint8.pb"
 configFile = "./Models/opencv_face_detector.pbtxt"
 net = cv2.dnn.readNetFromTensorflow(modelFile, configFile)
 img_path = input("Please enter the location of the image file: ")    # prompt the user to input the file path
-image = cv2.imread(filename)   # load the image
+image = cv2.imread(img_path)   # load the image
 cv2.imshow(image)  # show the original image
-results = detect_faces(img_path, net)  # detect faces
-draw_facebox(img_path, results)  # draw and show image with faceboxes 
+results = detect_faces(image, net)  # detect faces
+draw_facebox(image, results)  # draw and show image with faceboxes 
