@@ -41,8 +41,8 @@ def draw_facebox(image, result_list):
 
 
 ## loading opencv face detector model:
-modelFile = "./CV2Models/opencv_face_detector_uint8.pb"
-configFile = "./CV2Models/opencv_face_detector.pbtxt"
+modelFile = "./Models/opencv_face_detector_uint8.pb"
+configFile = "./Models/opencv_face_detector.pbtxt"
 net = cv2.dnn.readNetFromTensorflow(modelFile, configFile)
 
 ## capturing image from camera:
